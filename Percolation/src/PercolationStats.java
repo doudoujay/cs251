@@ -37,14 +37,14 @@ public class PercolationStats {
 
                 Percolation p = new Percolation(size);
                 double p_value = randomProcessFast(p);
-                System.out.println(p_value);
+//                System.out.println(p_value);
                 p_vals[i] = p_value;
 
 
             } else if (type.equals("slow")) {
                 Percolation_slow p = new Percolation_slow(size);
                 double p_value = randomProcessSlow(p);
-                System.out.println(p_value);
+//                System.out.println(p_value);
                 p_vals[i] = p_value;
             }
             stopwatch_times[i] = stopwatch.elapsedTime();

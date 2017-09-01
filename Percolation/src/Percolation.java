@@ -14,12 +14,17 @@ public class Percolation {
     boolean isFlowed;
     WeightedQuickUnionUF qf; //Weighted Quick Find for grading
     int count;
+    int top;
+    int bottom;
+
     //    Create a new n by n grid where all cells are initially blocked
     public Percolation(int n) {
         size = n;
         grid = new int[n][n];
         isFlowed = false;
-        qf = new WeightedQuickUnionUF(size * size);
+        qf = new WeightedQuickUnionUF(size * size + 2);
+        top = size * size;
+        bottom = size * size + 1;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 grid[i][j] = 0; //Set all blocked
@@ -38,6 +43,12 @@ public class Percolation {
         grid[x][y] = 1;
         count++;
 //        Flow the water while open the entry
+        if (y == size - 1) { // quick top connect
+            qf.union(convertIndex(x, y), top);
+        }
+        if (y == 0) { // quick bottom connect
+            qf.union(convertIndex(x, y), bottom);
+        }
 //        Left
         if (x - 1 >= 0 && isOpen(x - 1, y)) {
             qf.union(convertIndex(x, y), convertIndex(x - 1, y));
@@ -54,6 +65,7 @@ public class Percolation {
         if (y + 1 < size && isOpen(x, y + 1)) {
             qf.union(convertIndex(x, y), convertIndex(x, y + 1));
         }
+
     }
 
     //    Returns true if cell (x,y) is open due to a previous call to open(int x, int y)
@@ -67,23 +79,8 @@ public class Percolation {
         validateIndex(x, y);
         if (isOpen(x, y)) {
 //            connect to top row opened considered as full
-            for (int i = 0; i < size; i++) {
-                if (qf.connected(convertIndex(i, size - 1), convertIndex(x, y))) {
-                    return true;
-                }
-            }
 
-        }
-        return false;
-    }
-
-    //    Analyzes the entire grid and returns true if the whole system percolates
-    public boolean percolates() {
-//if any entry of the bottom is full,
-// considered as perlocate
-
-        for (int j = 0; j < size; j++) { // bottom line
-            if (isFull(j, 0)) {
+            if (qf.connected(top, convertIndex(x, y))) {
                 return true;
             }
         }
@@ -92,23 +89,38 @@ public class Percolation {
         return false;
     }
 
+    //    Analyzes the entire grid and returns true if the whole system percolates
+    public boolean percolates() {
+//if any entry of the bottom is full,
+// considered as perlocate
+
+        boolean result = qf.connected(top, bottom);
+
+
+        return result;
+    }
+
     //    Create a main method that reads a description of a grid from standard input (using StdIn.java)
     // and validates if the system described percolates or not, printing to standard output
     // a simple "Yes" or "No" answer (using StdOut.java).
     public static void main(String[] args) {
-        String file = args[0];
-        In inFile = new In(file); //read file
-        int size = inFile.readInt(); //set size
-        Percolation p = new Percolation(size);
-        while (!inFile.isEmpty()) {
-            int x_row = inFile.readInt();
-            int y_col = inFile.readInt();
-            p.open(x_row, y_col);
-        }
-        if (p.percolates()) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
+        try {
+            String file = args[0];
+            In inFile = new In(file); //read file
+            int size = inFile.readInt(); //set size
+            Percolation p = new Percolation(size);
+            while (!inFile.isEmpty()) {
+                int x_row = inFile.readInt();
+                int y_col = inFile.readInt();
+                p.open(x_row, y_col);
+            }
+            if (p.percolates()) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
         }
 
     }
@@ -142,8 +154,9 @@ public class Percolation {
     public int getSize() {
         return size;
     }
-    public int getGridSize(){
-        return size*size;
+
+    public int getGridSize() {
+        return size * size;
     }
 
     //count the open cells amount
@@ -151,10 +164,10 @@ public class Percolation {
         return count;
     }
 
-    public void randomOpen(){
+    public void randomOpen() {
         int x = StdRandom.uniform(size);
         int y = StdRandom.uniform(size);
-        open(x,y);
+        open(x, y);
 
     }
 }

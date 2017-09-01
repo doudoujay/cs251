@@ -94,19 +94,23 @@ public class Percolation_slow {
     // and validates if the system described percolates or not, printing to standard output
     // a simple "Yes" or "No" answer (using StdOut.java).
     public static void main(String[] args) {
-        String file = args[0];
-        In inFile = new In(file); //read file
-        int size = inFile.readInt(); //set size
-        Percolation_slow p = new Percolation_slow(size);
-        while (!inFile.isEmpty()) {
-            int x_row = inFile.readInt();
-            int y_col = inFile.readInt();
-            p.open(x_row, y_col);
-        }
-        if (p.percolates()) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
+        try {
+            String file = args[0];
+            In inFile = new In(file); //read file
+            int size = inFile.readInt(); //set size
+            Percolation p = new Percolation(size);
+            while (!inFile.isEmpty()) {
+                int x_row = inFile.readInt();
+                int y_col = inFile.readInt();
+                p.open(x_row, y_col);
+            }
+            if (p.percolates()) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
         }
 
     }
