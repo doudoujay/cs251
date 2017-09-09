@@ -82,3 +82,67 @@ Use some basic operation as a proxy for running time.
 
  
 Use cost model and tilde notation to simplify frequency counts.
+
+#### Estimating a discrete sum
+ Replace the sum with an integral, and use calculus!
+ 
+#### Mathematical models for running time
+In principle, accurate mathematical models are available.
+
+####  amortized analysis
+Average running time per operation over  a worst-case sequence of operations. [stay tuned]
+
+Often useful to compute average cost per operation over a sequence of ops.
+
+#### order-of-growth classifications
+
+the small set of functions 
+
+**Bottom line.** Need linear or linearithmic alg to keep pace with Moore's law.
+
+#### Binary search
+Given a sorted array and a key, find index of the key in the array?
+
+#### Binary search: mathematical analysis
+Binary search uses at most 1 + lg N compares to search in a sorted array of size N.
+
+#### An $N^2$ log N algorithm for 3-sum
+
+1. Sort the N numbers. *( $N^2$ with insertion sort)*
+2. For each pair of numbers a[i]and a[j], binary search for -(a[i] + a[j]). *($N^2$ log N with binary search.)*
+
+#### An $N^2$ log N algorithm for 3-sum
+
+### dependencies on inputs
+
+#### Types of analyses
+
+* Best case: Lower bound on cost
+* Worst case: Upper bound on cost
+* Avg case: “Expected” cost
+
+#### Commonly-used notations
+
+* Tilde: provide approximate model
+* Big Theta: classify algorithms
+* Big Oh: develop upper bounds
+* Big Omega: develop lower bounds
+
+#### Tilde notation vs. big-Oh notation
+We use tilde notation whenever possible.
+
+### memory
+
+#### Typical memory requirements for primitive types in Java
+* Bit
+* Byte
+* MB
+* GB
+
+Array overhead. 16 bytes.
+
+#### Empirical analysis.
+Model enables us to **make predictions.**
+
+#### Mathematical analysis.
+Model enables us to **explain behavior.**
