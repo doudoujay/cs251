@@ -51,11 +51,11 @@ public class PercolationStats {
         }
 
 //        Print result
-        System.out.println("Mean Threshold = " + StdStats.mean(p_vals));
-        System.out.println("Standard Deviation = "+StdStats.stddev(p_vals));
-        System.out.println("Total Time = "+ DoubleStream.of(stopwatch_times).sum());
-        System.out.println("Mean time = "+ StdStats.mean(stopwatch_times));
-        System.out.println("stddev time = "+ StdStats.stddev(stopwatch_times));
+        System.out.println("mean threshold=" + StdStats.mean(p_vals));
+        System.out.println("std dev="+StdStats.stddev(p_vals));
+        System.out.println("time="+ DoubleStream.of(stopwatch_times).sum());
+        System.out.println("mean time="+ StdStats.mean(stopwatch_times));
+        System.out.println("stddev time="+ StdStats.stddev(stopwatch_times));
 
 
     }
