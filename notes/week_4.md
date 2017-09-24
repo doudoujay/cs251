@@ -70,3 +70,105 @@ Ex. Insertion sort, selection sort, shellsort
 * Repeat for subarrays of size 2, 4, 8, 16, ....
 
 Bottom line. **No recursion needed!**
+
+### sorting complexity
+
+**Computational complexity.** Framework to study efficiency of algorithms for solving a particular problem X.
+
+* Model of computation.
+* Cost model.
+* Upper bound.
+* Lower bound. 
+* Optimal algorithm.
+
+Example: sorting
+
+```
+Model of computation: decision tree. 
+Cost model: # compares.Upper bound: ~ N lg N from mergesort.
+Lower bound: ~ N lg N ???Optimal algorithm: mergesort ???
+```
+
+#### Decision tree (for 3 distinct elements a, b, and c)
+
+**height of tree** =  worst-case number of compares
+
+(at least) one leaf for each possible ordering
+
+#### Compare-based lower bound for sorting
+
+Any compare-based sorting algorithm must use at least  lg ( N ! ) ~ N lg N compares in the worst-case.
+
+**First goal of algorithm design:** optimal algorithms.
+
+#### Complexity results in context
+
+**Other operations?** Mergesort is optimal with respect to number of compares (e.g., but not to number of array accesses).
+
+Lower bound may not hold if the algorithm has information about:
+
+```
+The initial order of the input. 
+The distribution of key values. 
+The representation of the keys.
+```
+
+### comparators
+
+#### Natural order
+
+**Comparable interface:**sort uses type’s natural order.
+
+Problem:
+
+* May want to use a non-natural order.
+* Desired data type may not come with a “natural” order.
+
+#### Generalized compare
+
+Ex. Sort strings by:
+
+```
+import java.text.Collator;
+
+Natural order.
+Case insensitive. 
+Spanish.British phone book.
+```
+
+#### Comparators
+Use Java's Comparator interface.Remark. compare() must implement a total order like compareTo().
+
+To support comparators in our sort implementations:
+
+```
+Use Object instead of Comparable. 
+Pass Comparator to sort() and less().
+Use it in less().
+```
+
+#### Generalized compare
+Comparators enable multiple sorts of a single array (by different keys).
+
+### stability
+A typical application. First, sort by name; then sort by section.
+
+A stable sort preserves the relative order of records with equal keys.
+
+#### Is insertion sort stable?
+Yes, equal elements never move past each other.
+
+#### Is selection sort stable?
+No, long-distance exchange might move left element to the right  of some equal element.
+
+#### Is shellsort stable?
+No. Long-distance exchanges.
+
+#### Is merge stable?
+Yes, if implemented carefully (take from left subarray if equal).
+
+#### Which sorts are stable ?
+
+**Yes**. Insertion sort, mergesort.<br>**No**. Selection sort, shellsort.
+
+Need to carefully check code ("less than" vs "less than or equal to").
