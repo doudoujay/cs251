@@ -118,3 +118,13 @@ Key-value pair abstraction.
 ### sequential search
 
 ### binary search
+
+Maintain an *ordered* array of key-value pairs.
+
+Rank helper function. How many keys < k ?
+
+Binary search uses ~ lg N compares to search any array of size N.
+
+**Problem.**To insert, need to shift all greater keys over.
+
+### ordered operations
