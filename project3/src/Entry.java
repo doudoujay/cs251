@@ -1,11 +1,12 @@
 
+import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Entry implements Comparable<Entry> {
   private int x;
   private int y;
   private int y_rank;
-
+  private ArrayList<Entry> L;
 
   public Entry(int x, int y) {
     this.x = x;
@@ -34,6 +35,14 @@ public class Entry implements Comparable<Entry> {
 
   public void setY_rank(int y_rank) {
     this.y_rank = y_rank;
+  }
+
+  public ArrayList<Entry> getL() {
+    return L;
+  }
+
+  public void setL(ArrayList<Entry> l) {
+    L = l;
   }
 
   @Override
