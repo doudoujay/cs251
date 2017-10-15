@@ -60,7 +60,7 @@ public class Filter {
       ) {
       System.out.println(e);
     }
-    System.out.println(s.elapsedTime());
+//    System.out.println(s.elapsedTime());
 
 
   }

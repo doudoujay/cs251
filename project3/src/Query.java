@@ -119,7 +119,7 @@ public class Query {
 
     }
 
-    System.out.println(s.elapsedTime());
+//    System.out.println(s.elapsedTime());
 
   }
 
