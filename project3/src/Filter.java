@@ -39,12 +39,12 @@ public class Filter {
   public static void main(String[] args) {
     Stopwatch s = new Stopwatch();
 //    Stdin Workaround
-    if (args.length > 1)
-      try {
-        System.setIn(new FileInputStream(args[1]));
-      } catch (FileNotFoundException e) {
-        e.printStackTrace();
-      }
+//    if (args.length > 1)
+//      try {
+//        System.setIn(new FileInputStream(args[1]));
+//      } catch (FileNotFoundException e) {
+//        e.printStackTrace();
+//      }
 
     int size = StdIn.readInt(); //set size
     Filter filter = new Filter(size);

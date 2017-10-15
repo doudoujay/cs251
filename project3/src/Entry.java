@@ -90,7 +90,7 @@ public class Entry implements Comparable<Entry> {
     public static Comparator<Entry> Y_reversed = new Comparator<Entry>() {
       @Override
       public int compare(Entry o1, Entry o2) {
-        return Integer.compare(o2.getY(),o1.getY());
+        return Integer.compare(o2.getY(), o1.getY());
       }
     };
   }
