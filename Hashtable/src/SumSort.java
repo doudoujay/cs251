@@ -22,7 +22,7 @@ public class SumSort {
             numArrayList.add(new Num(i, StdIn.readInt()));
         }
 //        Sort, cost nlogn
-        Collections.sort(numArrayList);
+//        Collections.sort(numArrayList);
         find(numArrayList);
         System.out.println(stopwatch.elapsedTime());
 
@@ -61,6 +61,7 @@ public class SumSort {
 //
 //    }
     public static void find(ArrayList<Num> numArrayList) {
+        Stopwatch stopwatch = new Stopwatch();
         ArrayList<Quadruple> result = new ArrayList<Quadruple>();
         ArrayList<Sum> sums = new ArrayList<Sum>();
         for (int i = 0; i < numArrayList.size(); i++) {
@@ -121,13 +122,14 @@ public class SumSort {
 
 
         }
-
+        double time = stopwatch.elapsedTime();
         Collections.sort(result); //nlogn
         System.out.println(result.size());
         for (Quadruple q : result
                 ) {
             System.out.println(q);
         }
+        System.out.println(time);
 
 
     }

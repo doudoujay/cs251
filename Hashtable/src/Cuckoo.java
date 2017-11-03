@@ -99,57 +99,57 @@ public class Cuckoo<K, V> {
 
     public void update_Lmax() {
 //        logb(n) = loge(n) / loge(b)
-        Lmax = (int) (3 * (Math.log(r) / Math.log(1 + e)) + 1);
+        Lmax = (int) Math.ceil((double) 3 * (Math.log(r) / Math.log(1 + e)) + 1);
     }
 
 
     public void put(K key, V value) {
-        updateAllInternalValues(); //update all internal crucial values
+        updateAllInternalValues();
         int index_1;
         int index_2;
 //        hash h1
         index_1 = hash(key, true);
         index_2 = hash(key, false);
-        if (table[index_1] == null) {
-//        If that cell is empty or key is same, insert the key
-            table[index_1] = new Entry<K, V>(key, value);
-            if (verbose) {
-                System.out.printf("(%d %d %d)\n", index_1, table[index_1].getKey(), table[index_1].getValue());
-            }
-
-
-        } else if (table[index_1].getKey().equals(key)) {
+        if (table[index_1] != null && table[index_1].getKey().equals(key)) {
             //Set operation 1
-            n--;
             table[index_1] = new Entry<K, V>(key, value);
             if (verbose) {
                 System.out.printf("(%d %d %d)\n", index_1, table[index_1].getKey(), table[index_1].getValue());
             }
         } else if (table[index_2] != null && table[index_2].getKey().equals(key)) {
             //Set operation 2
-            n--;
             table[index_2] = new Entry<K, V>(key, value);
             if (verbose) {
                 System.out.printf("(%d %d %d)\n", index_2, table[index_2].getKey(), table[index_2].getValue());
             }
         } else {
-//        if not, second hash function
 
-            if (table[index_2] == null) {
-//                If that cell is empty, the new key is inserted there,
-                table[index_2] = new Entry<K, V>(key, value);
+//            does not exit, insert new
+            if (table[index_1] == null) {
+//        If that cell is empty, insert the key
+                table[index_1] = new Entry<K, V>(key, value);
                 if (verbose) {
-                    System.out.printf("(%d %d %d)\n", index_2, table[index_2].getKey(), table[index_2].getValue());
+                    System.out.printf("(%d %d %d)\n", index_1, table[index_1].getKey(), table[index_1].getValue());
                 }
+
             } else {
+//        if not, second hash function
+                if (table[index_2] == null) {
+//                If that cell is empty, the new key is inserted there,
+                    table[index_2] = new Entry<K, V>(key, value);
+                    if (verbose) {
+                        System.out.printf("(%d %d %d)\n", index_2, table[index_2].getKey(), table[index_2].getValue());
+                    }
+                } else {
 //                otherwise it is inserted at index i1, thereby dislodging the key previously stored there.
-                dislodging(index_1, new Entry<K, V>(key, value));
+                    dislodging(index_1, new Entry<K, V>(key, value));
 
 
+                }
             }
+            n++;
         }
 
-        n++;
 
     }
 
@@ -161,6 +161,9 @@ public class Cuckoo<K, V> {
             update_r(); // size of hash table doubled
 //            rehash occurs
             rehash();
+            //TODO:  re calvulate hash
+            table[index] = currentEntry;
+            System.out.printf("(%d %d %d)\n", index, currentEntry.getKey(), currentEntry.getValue());
             limitCount = 0; //reset limit
             return;
 

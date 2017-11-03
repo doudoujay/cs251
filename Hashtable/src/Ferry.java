@@ -35,6 +35,7 @@ public class Ferry {
         System.out.println(ferry.getMaxK());
 
 
+
     }
 
     public Ferry(int length, ArrayList<Integer> list) {
@@ -55,7 +56,7 @@ public class Ferry {
     public void search(int sumLength, int carLen, int lenRight, int k) {
 //        for every search, we mark that searched pair to visited
         Pair pair = new Pair<Integer, Integer>(k, lenRight);
-        if (visited.containsKey(pair)) {
+        if (isVisited(pair)) {
             return; //if visited, return
         } else if (lenRight > L) {
             return;
