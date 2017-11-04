@@ -104,7 +104,8 @@ public class Cuckoo<K, V> {
 
 
     public void put(K key, V value) {
-        updateAllInternalValues();
+
+
         int index_1;
         int index_2;
 //        hash h1
@@ -116,6 +117,7 @@ public class Cuckoo<K, V> {
             if (verbose) {
                 System.out.printf("(%d %d %d)\n", index_1, table[index_1].getKey(), table[index_1].getValue());
             }
+
         } else if (table[index_2] != null && table[index_2].getKey().equals(key)) {
             //Set operation 2
             table[index_2] = new Entry<K, V>(key, value);
@@ -123,6 +125,9 @@ public class Cuckoo<K, V> {
                 System.out.printf("(%d %d %d)\n", index_2, table[index_2].getKey(), table[index_2].getValue());
             }
         } else {
+            updateAllInternalValues();
+            index_1 = hash(key, true);
+            index_2 = hash(key, false);
 
 //            does not exit, insert new
             if (table[index_1] == null) {
@@ -271,7 +276,7 @@ public class Cuckoo<K, V> {
 
     public void updateAllInternalValues() {
         update_Lmax();
-        if (r < (2 * (1 + e) * (n+1))) {
+        if (r < (2 * (1 + e) * (n + 1))) {
             update_r();
             rehash();
         }

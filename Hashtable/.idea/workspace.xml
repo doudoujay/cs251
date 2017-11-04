@@ -19,18 +19,12 @@
     <splitter split-orientation="horizontal" split-proportion="0.61167145">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Ferry.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Ferry.java">
+          <file leaf-file-name="cuckoo3out.txt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/examples/cuckoo3out.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="489">
-                  <caret line="63" column="33" lean-forward="false" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#4219#4220#0" expanded="true" />
-                    <element signature="e#4246#4247#0" expanded="true" />
-                    <element signature="e#4269#4270#0" expanded="true" />
-                    <element signature="e#4293#4294#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="3555">
+                  <caret line="237" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19317" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -38,8 +32,8 @@
           <file leaf-file-name="Cuckoo.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Cuckoo.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
+                <state relative-caret-position="323">
+                  <caret line="129" column="39" lean-forward="false" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -55,10 +49,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SumHash.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SumHash.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/SumHash.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="474">
+                <state relative-caret-position="495">
                   <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="32" />
                   <folding />
                 </state>
@@ -123,7 +117,9 @@
       <find>174253</find>
       <find>1743264</find>
       <find>(242 1743264 5818)</find>
+      <find>hash</find>
       <find>2420 96097</find>
+      <find>2465765 34973</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -142,9 +138,9 @@
         <option value="$PROJECT_DIR$/src/SumHash.java" />
         <option value="$PROJECT_DIR$/out.txt" />
         <option value="$PROJECT_DIR$/src/SumSort.java" />
-        <option value="$PROJECT_DIR$/src/Cuckoo.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/src/Ferry.java" />
+        <option value="$PROJECT_DIR$/src/Cuckoo.java" />
       </list>
     </option>
   </component>
@@ -234,14 +230,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Ferry">
+  <component name="RunManager" selected="Application.Cuckoo">
     <configuration name="Cuckoo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <output_file path="out.txt" is_save="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="recording" autostart="false" />
       <option name="MAIN_CLASS_NAME" value="Cuckoo" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="&lt; examples/cuckoo3.txt" />
+      <option name="PROGRAM_PARAMETERS" value="&lt; examples/cuckoo1.txt" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -679,9 +675,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Ferry" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SumHash" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Cuckoo" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Cuckoo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Ferry" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SumHash" />
         <item index="3" class="java.lang.String" itemvalue="Application.SumSort" />
       </list>
     </recent_temporary>
@@ -711,12 +707,12 @@
       <workItem from="1509648728692" duration="4320000" />
       <workItem from="1509656961114" duration="14680000" />
       <workItem from="1509812372584" duration="761000" />
-      <workItem from="1509816405828" duration="2941000" />
+      <workItem from="1509816405828" duration="5407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65781000" />
+    <option name="totallyTimeSpent" value="68247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="960" extended-state="6" />
@@ -727,20 +723,20 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14682081" sideWeight="0.525641" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14682081" sideWeight="0.53296703" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14682081" sideWeight="0.47435898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14682081" sideWeight="0.46703297" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14364035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15567766" sideWeight="0.73124146" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15567766" sideWeight="0.73124146" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16483517" sideWeight="0.49448818" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3630058" sideWeight="0.71306473" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3630058" sideWeight="0.7039072" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06115965" sideWeight="0.26875854" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -768,7 +764,7 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <condition expression="key == 638 &amp;&amp; val == 9" language="JAVA" />
+          <condition expression="key == 1743264 &amp;&amp; val == 5818" language="JAVA" />
           <url>file://$PROJECT_DIR$/src/Cuckoo.java</url>
           <line>41</line>
           <properties />
@@ -1022,13 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18000" column="18" lean-forward="true" selection-start-line="18000" selection-start-column="18" selection-end-line="18000" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/cuckoo3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2025">
@@ -1095,22 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/cuckoo2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cuckoo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ferry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -1149,14 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/cuckoo3out.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="266" column="12" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/cuckoo1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
@@ -1167,8 +1132,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SumHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
+        <state relative-caret-position="495">
           <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/cuckoo2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="18008" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19318" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cuckoo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="129" column="39" lean-forward="false" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/cuckoo3out.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3555">
+          <caret line="237" column="17" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="19317" selection-end-column="0" />
           <folding />
         </state>
       </provider>
