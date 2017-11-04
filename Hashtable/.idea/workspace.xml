@@ -17,23 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SumHash.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SumHash.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SumHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+            <state relative-caret-position="300">
+              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SumSort.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SumSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SumSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="69" column="70" lean-forward="true" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
+            <state relative-caret-position="90">
+              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
-                <element signature="e#2353#2364#0" expanded="true" />
+                <element signature="e#2357#2368#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +83,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/src/Ferry.java" />
         <option value="$PROJECT_DIR$/src/Cuckoo.java" />
-        <option value="$PROJECT_DIR$/src/SumSort.java" />
         <option value="$PROJECT_DIR$/src/SumHash.java" />
+        <option value="$PROJECT_DIR$/src/SumSort.java" />
       </list>
     </option>
   </component>
@@ -651,12 +651,12 @@
       <workItem from="1509648728692" duration="4320000" />
       <workItem from="1509656961114" duration="14680000" />
       <workItem from="1509812372584" duration="761000" />
-      <workItem from="1509816405828" duration="7597000" />
+      <workItem from="1509816405828" duration="7826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70437000" />
+    <option name="totallyTimeSpent" value="70666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="960" extended-state="6" />
@@ -975,11 +975,11 @@
         <state relative-caret-position="489">
           <caret line="63" column="33" lean-forward="false" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4219#4220#0" expanded="true" />
-            <element signature="e#4246#4247#0" expanded="true" />
-            <element signature="e#4269#4270#0" expanded="true" />
-            <element signature="e#4293#4294#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4219#4220#0" expanded="false" />
+            <element signature="e#4246#4247#0" expanded="false" />
+            <element signature="e#4269#4270#0" expanded="false" />
+            <element signature="e#4293#4294#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1096,32 +1096,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SumSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="69" column="70" lean-forward="true" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-          <folding>
-            <element signature="e#2353#2364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="473" column="11" lean-forward="false" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
           <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
+            <element signature="e#19296#19297#0" expanded="false" />
+            <element signature="e#19379#19380#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SumHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+        <state relative-caret-position="300">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SumSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="e#2357#2368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

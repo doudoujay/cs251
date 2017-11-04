@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bffe0416-5c17-4af9-a294-78311570e136" name="data" url="http://data.cs.purdue.edu">
+        <fileTransfer host="data.cs.purdue.edu" port="22" rootFolder="/home/u89/ma438" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
