@@ -161,7 +161,7 @@ public class Cuckoo<K, V> {
             update_r(); // size of hash table doubled
 //            rehash occurs
             rehash();
-            //TODO:  re calvulate hash
+            //TODO:  re calculate hash
             table[index] = currentEntry;
             System.out.printf("(%d %d %d)\n", index, currentEntry.getKey(), currentEntry.getValue());
             limitCount = 0; //reset limit
@@ -271,7 +271,7 @@ public class Cuckoo<K, V> {
 
     public void updateAllInternalValues() {
         update_Lmax();
-        if (r < (2 * (1 + e) * n)) {
+        if (r < (2 * (1 + e) * (n+1))) {
             update_r();
             rehash();
         }
