@@ -30,7 +30,7 @@ public class SumHash {
 
     public static void find(ArrayList<Num> numArrayList) {
 //Generate all the pairwise sums in O(N^2)
-        Stopwatch stopwatch = new Stopwatch();
+//        Stopwatch stopwatch = new Stopwatch();
         ArrayList<Quadruple> result = new ArrayList<Quadruple>();
         Map<Integer, ArrayList<Sum>> map = new HashMap<>(); // the arrayList contains the same sum
         for (int i = 0; i < numArrayList.size(); i++) {
@@ -77,13 +77,13 @@ public class SumHash {
             }
 
         }
-        double time = stopwatch.elapsedTime();
+//        double time = stopwatch.elapsedTime();
         Collections.sort(result); //nlogn
         System.out.println(result.size());
         for (Quadruple q : result
                 ) {
             System.out.println(q);
         }
-        System.out.println(time);
+//        System.out.println(time);
     }
 }
