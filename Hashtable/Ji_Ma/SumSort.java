@@ -62,8 +62,8 @@ public class SumSort {
 //    }
     public static void find(ArrayList<Num> numArrayList) {
 //        Stopwatch stopwatch = new Stopwatch();
-        ArrayList<Quadruple> result = new ArrayList<Quadruple>();
-        ArrayList<Sum> sums = new ArrayList<Sum>();
+        ArrayList<Quadruple> result = new ArrayList<Quadruple>(numArrayList.size()*numArrayList.size()/2);
+        ArrayList<Sum> sums = new ArrayList<Sum>(numArrayList.size()*numArrayList.size()/2);
         for (int i = 0; i < numArrayList.size(); i++) {
             for (int j = i + 1; j < numArrayList.size(); j++) {
 //                n^2 here

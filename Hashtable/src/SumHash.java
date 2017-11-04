@@ -24,6 +24,7 @@ public class SumHash {
         for (int i = 0; i < size; i++) {
             numArrayList.add(new Num(i, StdIn.readInt()));
         }
+        Collections.sort(numArrayList);
         find(numArrayList);
 //        System.out.println(stopwatch.elapsedTime());
     }
@@ -31,7 +32,7 @@ public class SumHash {
     public static void find(ArrayList<Num> numArrayList) {
 //Generate all the pairwise sums in O(N^2)
 //        Stopwatch stopwatch = new Stopwatch();
-        ArrayList<Quadruple> result = new ArrayList<Quadruple>();
+        ArrayList<Quadruple> result = new ArrayList<Quadruple>(numArrayList.size()*numArrayList.size()/2);
         Map<Integer, ArrayList<Sum>> map = new HashMap<>(); // the arrayList contains the same sum
         for (int i = 0; i < numArrayList.size(); i++) {
             for (int j = i + 1; j < numArrayList.size(); j++) {
