@@ -11,7 +11,7 @@ import java.util.Map;
 public class SumHash {
     //    N^2
     public static void main(String[] args) {
-        Stopwatch stopwatch = new Stopwatch();
+//        Stopwatch stopwatch = new Stopwatch();
         //    Stdin Workaround
         if (args.length > 1)
             try {
@@ -25,7 +25,7 @@ public class SumHash {
             numArrayList.add(new Num(i, StdIn.readInt()));
         }
         find(numArrayList);
-        System.out.println(stopwatch.elapsedTime());
+//        System.out.println(stopwatch.elapsedTime());
     }
 
     public static void find(ArrayList<Num> numArrayList) {

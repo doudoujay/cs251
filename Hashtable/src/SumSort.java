@@ -8,7 +8,7 @@ import java.util.Collections;
 public class SumSort {
     //    N^2LogN
     public static void main(String[] args) {
-        Stopwatch stopwatch = new Stopwatch();
+//        Stopwatch stopwatch = new Stopwatch();
         //    Stdin Workaround
         if (args.length > 1)
             try {
@@ -24,7 +24,7 @@ public class SumSort {
 //        Sort, cost nlogn
 //        Collections.sort(numArrayList);
         find(numArrayList);
-        System.out.println(stopwatch.elapsedTime());
+//        System.out.println(stopwatch.elapsedTime());
 
     }
 
