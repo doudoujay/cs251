@@ -42,3 +42,5 @@ Can represent the SPT with two vertex-indexed arrays:
 #### Dijkstra's algorithm: which priority queue?
 
 V insert, V delete-min, E decrease-key.
+
+Use min priority queue.
